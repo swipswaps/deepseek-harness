@@ -1,0 +1,14 @@
+[Unit]
+Description=DeepSeek Harness 2.0 Web Daemon
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/Documents/ecfd2aca34976149/deepseek_harness/repo
+Environment="PATH=%h/.npm-global/bin:/usr/local/bin:/usr/bin:/bin"
+ExecStart=/usr/bin/node src/index.js
+Restart=on-failure
+RestartSec=5s
+
+[Install]
+WantedBy=default.target

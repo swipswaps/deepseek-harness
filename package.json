@@ -1,0 +1,17 @@
+{
+  "name": "deepseek-harness-workspace",
+  "version": "2.0.0",
+  "description": "DeepSeek V4.1 Flash & Harness 2.0 Agent Integration Suite",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "dependencies": {
+    "@deepseek-ai/dsh": "^2.0.0-rc"
+  },
+  "engines": {
+    "node": ">=22.19.0"
+  }
+}
